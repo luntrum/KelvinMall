@@ -4,12 +4,13 @@ import ShopPayment from './components/ShopPayment';
 import ShopHeader from './components/ShopHeader/ShopHeader';
 import ScrollToTopBtn from './components/ScrollToTopBtn';
 import { ShopProvider } from './context/ShopProvider';
-import ShopCategory from './components/ShopHeader/ShopCategory';
+import ShopMainDisplay from './components/ShopMainDisplay/ShopMainDisplay';
 
 function App() {
   return (
     <ShopProvider>
       <ShopHeader />
+      <ShopMainDisplay />
       <ShopPayment />
       <ScrollToTopBtn />
     </ShopProvider>

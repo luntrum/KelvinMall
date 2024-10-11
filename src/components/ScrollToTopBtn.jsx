@@ -7,9 +7,9 @@ function ScrollToTopBtn() {
     const currentScrollY = window.scrollY;
 
     const isScrolled = () => {
-      if (currentScrollY < lastScrollY && currentScrollY > 300) {
+      if (currentScrollY < lastScrollY && currentScrollY > 150) {
         setIsVisible(true);
-      } else if (currentScrollY > lastScrollY || currentScrollY < 100)
+      } else if (currentScrollY > lastScrollY || currentScrollY < 10)
         setIsVisible(false);
       setLastScrollY(currentScrollY);
     };
